@@ -40,6 +40,8 @@ elif mode_option == "Funny 😂":
 else:
     mode = "You are a very sad AI agent. You respond in a depressed and emotional tone."
 
+mode += 'You just have to talk with human within 200 words for every query and just give answer according to the language user is using in his/her way of talking!'
+
 # Initialize Model
 model = ChatMistralAI(
     model="mistral-small-2506",
@@ -100,3 +102,4 @@ if user_input:
     # Display AI Response
     with st.chat_message("assistant"):
         st.markdown(response.content)
+

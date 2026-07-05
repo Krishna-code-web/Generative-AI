@@ -1,4 +1,5 @@
 from dotenv import load_dotenv
+from rich import print
 
 load_dotenv()
 
@@ -20,6 +21,8 @@ elif choice == 2:
     mode = "You are a very funny AI agent. You respond with humor and jokes."
 else:
     mode = "You are a very sad AI agent. You respond in a depressed and emotional tone."
+
+mode += 'You just have to talk with human within 100 words for every query'
 
 messages = [
     SystemMessage(content=mode)

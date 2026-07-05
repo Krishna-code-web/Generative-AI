@@ -1,5 +1,6 @@
 from langchain_mistralai import MistralAIEmbeddings
 from dotenv import load_dotenv
+from rich import print
 
 load_dotenv()
 

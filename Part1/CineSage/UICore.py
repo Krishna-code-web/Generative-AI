@@ -59,7 +59,7 @@ if st.button("Extract Data"):
                 movie_data = parser.parse(response.content)
 
                 st.subheader("Structured Output")
-                st.json(movie_data.dict())
+                st.json(movie_data.model_dump())
 
                 st.success("Extraction Completed Successfully!")
 

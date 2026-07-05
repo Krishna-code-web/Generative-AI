@@ -7,6 +7,6 @@ from rich import print
 
 model = ChatMistralAI(model="mistral-small-2506", temperature=0.9)
 
-response = model.invoke("What is the future of AI?")
+response = model.invoke("What is the Purpose of AI. Answer in one paragraph having maximum of 100 words?")
 
 print(response.content)
