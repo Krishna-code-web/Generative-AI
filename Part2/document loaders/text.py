@@ -7,13 +7,14 @@ from langchain_text_splitters import CharacterTextSplitter
 
 splitter = CharacterTextSplitter(
     separator = "", 
-    chunk_size = 1000,
+    chunk_size = 40,
     chunk_overlap = 1
 )
 
 data = TextLoader("notes.txt")
 
 docs = data.load()
+# print(docs)
 
 chunks = splitter.split_documents(docs)
 

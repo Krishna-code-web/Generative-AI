@@ -39,3 +39,5 @@ result = retriever.invoke(query)
 
 for i in result:
     print(i.page_content)
+    print()
+    print()
